@@ -1,0 +1,136 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-size: 14px;
+    border: none;
+    background-color: #F9F9FA;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.posts-list-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .posts-list-enter-active,
+  .posts-list-leave-active {
+    transition: all 0.5s ease;
+  }
+  .posts-list-enter-from,
+  .posts-list-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+.header
+{
+    background-color: rgb(66, 63, 63);
+    color: white;
+    display: flex;
+    padding: 25px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.header__pages
+{
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+.header__pages:hover
+{
+    top: -3px;
+}
+
+.active
+{
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(2, 2, 2);
+    margin-right: 10px;
+}
+
+.creator
+{
+    height: 40px;
+    width: 200px;
+    margin-top: 25px;
+    margin: 25px auto;
+}
+.creator__btn
+{
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.creator__form
+{
+    width: 400px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator__input
+{
+    width: 300px;
+    height: 30px;
+}
+.creator__title
+{
+    width: 300px;
+    margin: 20px 0;
+}
+.creator__mainText
+{
+    width: 300px;
+    margin: 20px 0;
+}
+
+.task
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 600px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+.task__title
+{
+    margin: 0;
+}
+.task__btnWrapper
+{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row;
+}
+.task__btnWrapper > button {
+    cursor: pointer;
+}
+.link
+{
+    all: unset;
+}
